@@ -1,3 +1,4 @@
+import { Button } from "components/Button"
 import type { NextPage } from "next"
 import styled from "styled-components"
 
@@ -9,6 +10,7 @@ const Main = styled.main`
 const Home: NextPage = () => {
   return (
     <div>
+      <Button>Página Anterior</Button>
       <h1>welcome to next.js!</h1>
       <Main>Olá next</Main>
     </div>
