@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/react"
-import { render } from "helpers/testHelper"
+import { render, toJSON } from "helpers/testHelper"
 import { Button } from "components/Button"
 import { theme } from "styles/theme"
 
@@ -25,5 +25,13 @@ describe("Button", () => {
       backgroundColor: theme.colors.white,
       border: `0.1rem solid ${theme.colors.black}`,
     })
+  })
+  it("should render a disabled input", () => {
+    const tree = toJSON(<Button disabled>Página Anterior</Button>)
+
+    expect(tree).toHaveStyleRule("cursor", "not-allowed", {
+      modifier: ":disabled",
+    })
+    expect(tree).toMatchSnapshot()
   })
 })

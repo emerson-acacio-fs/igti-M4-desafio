@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render a disabled input 1`] = `
+.c0 {
+  padding: 1rem;
+  background-color: #FAFAFA;
+  border: 0.1rem solid #030517;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Página Anterior
+</button>
+`;

@@ -8,12 +8,8 @@ const createJestConfig = nextJest({
 // Add any custom config to be passed to Jest
 const customJestConfig = {
   setupFilesAfterEnv: ["./jest.setup.js"],
+  modulePaths: ["<rootDir>/"],
   moduleNameMapper: {
-    // Handle module aliases (this will be automatically configured for you soon)
-    "^components/(.*)$": "<rootDir>/components/$1",
-    "^pages/(.*)$": "<rootDir>/pages/$1",
-    "^helpers/(.*)$": "<rootDir>/helpers/$1",
-    "^styles/(.*)$": "<rootDir>/styles/$1",
     "^styled-components":
       "<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js",
   },
