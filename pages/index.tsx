@@ -33,7 +33,7 @@ const Home: NextPage = () => {
   if (!data) {
     return <div>loading...</div>
   }
-
+  console.log(data)
   return (
     <Main>
       <HeaderWrapper>
